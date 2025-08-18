@@ -65,7 +65,7 @@ export default function SignupPage() {
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-bold text-foreground">Create Account</CardTitle>
+          <CardTitle className="text-2xl font-bold text-foreground ">Create Account</CardTitle>
           <CardDescription className="text-muted-foreground">
             Join ExpenseTracker to start managing your finances
           </CardDescription>
@@ -168,13 +168,13 @@ export default function SignupPage() {
               </div>
             </div>
 
-            <Button type="submit" className="w-full" disabled={isLoading}>
+            <Button type="submit" className="w-full bg-gradient-to-r from-teal-600 to-purple-600" disabled={isLoading}>
               {isLoading ? "Creating Account..." : "Create Account"}
             </Button>
 
             <div className="text-center text-sm text-muted-foreground">
               Already have an account?{" "}
-              <Link href="/login" className="text-accent hover:underline">
+              <Link href="/login" className="text-purple-500 hover:underline">
                 Sign in
               </Link>
             </div>

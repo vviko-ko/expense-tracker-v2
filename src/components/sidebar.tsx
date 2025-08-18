@@ -48,7 +48,7 @@ export function Sidebar() {
               <Wallet className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-white">ExpenseTracker</h1>
+              <h1 className="text-xl font-bold text-white">VFynn</h1>
               <p className="text-sm text-teal-100">Manage your finances</p>
             </div>
           </div>

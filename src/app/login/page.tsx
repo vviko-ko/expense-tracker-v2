@@ -92,7 +92,7 @@ export default function LoginPage() {
                   type="button"
                   variant="ghost"
                   size="sm"
-                  className="absolute right-0 top-0 h-full px-3 py-2 hover:bg-transparent"
+                  className="absolute right-0  top-0 h-full px-3 py-2 hover:bg-transparent"
                   onClick={() => setShowPassword(!showPassword)}
                 >
                   {showPassword ? (
@@ -104,13 +104,13 @@ export default function LoginPage() {
               </div>
             </div>
 
-            <Button type="submit" className="w-full" disabled={isLoading}>
+            <Button type="submit" className="w-full bg-gradient-to-r from-teal-600 to-purple-600" disabled={isLoading}>
               {isLoading ? "Signing In..." : "Sign In"}
             </Button>
 
             <div className="text-center text-sm text-muted-foreground">
               Don't have an account?{" "}
-              <Link href="/signup" className="text-accent hover:underline">
+              <Link href="/signup" className="text-purple-500 hover:underline">
                 Sign up
               </Link>
             </div>
