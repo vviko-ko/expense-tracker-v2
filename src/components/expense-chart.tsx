@@ -5,12 +5,12 @@ import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts"
 
 const data = [
-  { month: "Jan", amount: 1200 },
-  { month: "Feb", amount: 1800 },
-  { month: "Mar", amount: 1600 },
-  { month: "Apr", amount: 2100 },
-  { month: "May", amount: 1900 },
-  { month: "Jun", amount: 1847 },
+  { month: "Jan", amount: 0 },
+  { month: "Feb", amount: 0 },
+  { month: "Mar", amount: 0 },
+  { month: "Apr", amount: 0 },
+  { month: "May", amount: 0 },
+  { month: "Jun", amount: 0 },
 ]
 
 const chartConfig = {
@@ -42,6 +42,9 @@ export function ExpenseChart() {
             </BarChart>
           </ResponsiveContainer>
         </ChartContainer>
+        <div className="text-center text-muted-foreground text-sm mt-4">
+          Start adding expenses to see your spending trends
+        </div>
       </CardContent>
     </Card>
   )

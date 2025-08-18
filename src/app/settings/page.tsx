@@ -251,6 +251,7 @@ export default function SettingsPage() {
                     <SelectItem value="GBP">GBP (£)</SelectItem>
                     <SelectItem value="JPY">JPY (¥)</SelectItem>
                     <SelectItem value="CAD">CAD (C$)</SelectItem>
+                    <SelectItem value="NIG">NGR (#)</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
