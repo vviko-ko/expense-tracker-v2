@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { DollarSign, TrendingUp, TrendingDown, CreditCard, Calendar, Plus, PieChart, BarChart3 } from "lucide-react"
-import { ExpenseChart } from "@/components/expense-chart"
+// import { ExpenseChart } from "@/components/expense-chart"
 import { RecentTransactions } from "@/components/recent-transactions"
 import { SubscriptionOverview } from "@/components/subscription-overview"
 
@@ -111,7 +111,7 @@ export default function DashboardPage() {
 
           {/* Charts and Recent Activity */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <ExpenseChart />
+            {/* <ExpenseChart /> */}
             <SubscriptionOverview />
           </div>
 
