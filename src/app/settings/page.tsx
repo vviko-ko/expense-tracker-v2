@@ -17,7 +17,7 @@ import { DashboardHeader } from "@/components/dashboard-header"
 export default function SettingsPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [userName, setUserName] = useState("")
-  const [userEmail, setUserEmail] = useState("")
+  const [, setUserEmail] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [saveMessage, setSaveMessage] = useState("")
   const router = useRouter()
@@ -84,6 +84,7 @@ export default function SettingsPage() {
       setUserEmail(profileEmail)
 
       setSaveMessage("Profile updated successfully!")
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       setSaveMessage("Failed to update profile. Please try again.")
     } finally {
@@ -103,6 +104,7 @@ export default function SettingsPage() {
       localStorage.setItem("monthlyBudget", monthlyBudget)
 
       setSaveMessage("Preferences saved successfully!")
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       setSaveMessage("Failed to save preferences. Please try again.")
     } finally {

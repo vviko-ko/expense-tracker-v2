@@ -37,6 +37,7 @@ export default function LoginPage() {
       } else {
         setError("Please enter both email and password")
       }
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
       setError("Login failed. Please try again.")
     } finally {
@@ -109,7 +110,7 @@ export default function LoginPage() {
             </Button>
 
             <div className="text-center text-sm text-muted-foreground">
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
               <Link href="/signup" className="text-purple-500 hover:underline">
                 Sign up
               </Link>
